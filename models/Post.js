@@ -28,7 +28,6 @@ Post.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
-        // will be a foreign key
         key: 'id'
       }
     }
