@@ -11,7 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 // turn on routes
 app.use(routes);
 
-// turn on connection to db and server
+// turn on connection to db and server ; sequelize.sync({ force: true }) to delete tables
+// sequelize.sync({ force: false }) to leave tables in place
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
