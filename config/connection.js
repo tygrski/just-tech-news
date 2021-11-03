@@ -9,8 +9,10 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER , proce
   name: "root",
   password: 'RockyRanch88',
   dialect: 'mysql',
+  // loggin: false get ride of the text above  Now listening in the tetminal after starting server
   logging: false,
   port: 3306
 });
+// location of stylesheet http://localhost:3001/assests/stylesheets/styles.css
 
 module.exports = sequelize;
