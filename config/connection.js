@@ -9,6 +9,7 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER , proce
   name: "root",
   password: 'RockyRanch88',
   dialect: 'mysql',
+  logging: false,
   port: 3306
 });
 
